@@ -10,19 +10,23 @@ The orbital eccentricity of geostationary satellites like Fengyun-2F is typicall
 
 - Load and process satellite TLE (Two-Line Element) data  
 - Analyze the eccentricity time series  
-- Forecast using ARIMA modeling  
+- Forecast using multiple time series models  
 - Identify anomalies using residuals and statistical thresholds  
 
 ---
 
-## 🧠 Methods
+## 🧠 Methods Implemented
 
-The analysis involves:
+The following methods have been implemented in this project:
 
-- **ARIMA (AutoRegressive Integrated Moving Average)** for time series forecasting  
-- Residual-based **anomaly detection**  
-- Visualization using **Matplotlib** and **Seaborn**  
-- Time series diagnostics (ACF, PACF, residual plots)  
+- **ARIMA** (AutoRegressive Integrated Moving Average)
+- **Auto-ARIMA** for automated parameter selection
+- **Rolling ARIMA** for adaptive short-window forecasting
+- **Rolling SARIMAX** for seasonal modeling with exogenous variables
+- **LSTM (Long Short-Term Memory)** for deep learning-based time series prediction
+- Residual-based **anomaly detection**
+- Visualization using **Matplotlib** and **Seaborn**
+- Diagnostic plots (ACF, PACF, residual analysis)
 
 ---
 
@@ -44,7 +48,7 @@ Fengyun2FEccentricity/
 Install the required Python packages:
 
 ```bash
-pip install numpy pandas matplotlib seaborn statsmodels
+pip install numpy pandas matplotlib seaborn statsmodels pmdarima tensorflow
 ```
 
 ---
@@ -53,19 +57,20 @@ pip install numpy pandas matplotlib seaborn statsmodels
 
 The notebook generates:
 
-- Time series plot of actual vs predicted eccentricity  
-- Residual diagnostics for ARIMA performance  
-- Highlighted anomalies based on model deviations  
+- Time series plots comparing actual and predicted eccentricity  
+- Residual diagnostics for model validation  
+- Detected anomalies based on statistical deviation  
 
 ---
 
 ## 🚀 Future Work
 
-Potential extensions of this project include:
+Potential future directions for this project include:
 
-- Implementing **SARIMA** or **LSTM** models for improved accuracy  
-- Analyzing additional orbital parameters (e.g., inclination, RAAN)  
-- Automating anomaly validation using historical maneuver records  
+- Integrating **Large Language Models (LLMs)** for pattern reasoning or natural language anomaly descriptions  
+- Using **TimeGPT** or transformer-based models for enhanced forecasting  
+- Expanding anomaly detection to multi-variate telemetry datasets  
+- Incorporating real maneuver logs for validation
 
 ---
 
