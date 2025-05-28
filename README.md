@@ -90,4 +90,4 @@ If you have questions, suggestions, or collaboration requests:
 
 ---
 
-> _"Even a perfectly circular orbit holds secrets — it just takes the right lens to see them."_ ✨
+> _"Even a perfectly circular orbit holds secrets, it just takes the right lens to see them."_ ✨
